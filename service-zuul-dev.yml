@@ -10,3 +10,8 @@ zuul:
       path: /api-order/**
       #订单服务别名
       serviceId: app-feign-order
+    api-c:
+    #当客户端发送请求127.0.0.1:80/api-pay开头的所有请求，都会转发到订单服务pay
+      path: /api-pay/**
+      #订单服务别名
+      serviceId: pay
